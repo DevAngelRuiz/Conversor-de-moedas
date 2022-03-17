@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:ital,wght@0,700;1,300;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Dev - Conversor de Moedas</title>
+</head>
+
+<body>
+    <div id="cabecalho">
+        <h1>Dev - Conversor de Moedas</h1>
+    </div>
+
+    <div id="caixa-principal">
+        <p class="paragrafo">Converter <b>de</b>:</p>
+
+        <select class="select">
+            <option><b>R$ Real brasileiro</b></option>
+        </select>
+
+        <p class="paragrafo">Converter <b>para</b>:</p>
+        <select class="select" id = "select-moedas">
+            <option><b>US$ Dolar</b></option>
+            <option><b>€ Euro</b></option>
+        </select>
+
+
+        <p class="paragrafo">Valor:</p>
+        <input id="input" placeholder="R$ 10.000,00" type="number">
+        <button id="button">converter</button>
+
+
+        <div id="caixa-interna">
+
+            <div class="caixa-menor">
+                <img src="./img/brasil.png">
+                <p class= "paragrafo">Real</p>
+                <p class= "paragrafo-negrito" id = "texto-real">R$ 10.000,00</p>
+            </div>
+
+            <img id="seta" src="./img/seta.png">
+
+            <div class="caixa-menor">
+                <img id = "bandeira-moedas" src="./img/eua.png">
+                <p class= "paragrafo" id = "texto-moedas">Dólar Americano</p>
+                <p class= "paragrafo-negrito" id = "input-moedas">$ 2.000,00</p>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+
+    #cabecalho {
+        background: #9657A5;
+        width: 375px;
+        height: 66px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+    }
+
+    h1 {
+        color: #F4F4F4;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    #caixa-principal {
+        background: #E5E5E5;
+        width: 375px;
+        padding: 24px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .paragrafo {
+        margin-bottom: 6px;
+        color: #777777;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .select {
+        background: #FFFFFF;
+        border: 1px solid #BBBBBB;
+        border-radius: 4px;
+        width: 327px;
+        height: 48px;
+        left: 24px;
+        top: 113px;
+        margin-bottom: 23px;
+        cursor: pointer;
+        padding-left: 16px;
+        font-size: 16px;
+    }
+
+    #input {
+        background: #FFFFFF;
+        border: 1px solid #BBBBBB;
+        border-radius: 4px;
+        width: 327px;
+        height: 48px;
+        left: 24px;
+        top: 113px;
+        margin-bottom: 23px;
+        cursor: pointer;
+        padding-left: 16px;
+        font-size: 16px;
+        outline: none;
+    }
+
+    #button {
+        background: #CDD728;
+        border-radius: 25px;
+        width: 327px;
+        height: 48px;
+        left: 24px;
+        top: 374px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        cursor: pointer;
+        border: none;
+        color: #F4F4F4;
+        outline: none;
+        margin-bottom: 15px;
+    }
+    #button:active{
+        opacity: 0.6;
+    }
+
+    #caixa-interna {
+        width: 327px;
+        height: 300px;
+        left: 24px;
+        top: 458px;
+        border: 1px solid #9657A5;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .caixa-menor {
+        text-align: center;
+
+    }
+
+    #seta {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .paragrafo-negrito{
+
+        font-weight: bold;
+        font-size: 18px;
+    }
+</style>
+<script src="./scripts.js">
+
+</script>
+
+
+</html> 
